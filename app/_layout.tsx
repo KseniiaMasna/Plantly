@@ -5,11 +5,13 @@ export default function Layout() {
     return (
         <Stack>
             <Stack.Screen name="(tabs)" options={{
-                headerShown:false
+                headerShown:false,
+                animation: "fade"
             }}/>
             <Stack.Screen name="onboarding" options={{
                 headerShown: false,
-                presentation: "modal"
+                presentation: "modal",
+                animation: "fade"
             }}/> 
         </Stack>
     )
