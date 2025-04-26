@@ -14,18 +14,12 @@ export default function RootLayout() {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: theme.colorGreen }}>
       <Tabs.Screen
-        name="index"
+        name="(home)"
         options={{
           title: "Home",
+          headerShown: false,
           tabBarIcon: ({ size, color }) => (
             <Entypo name="leaf" size={size} color={color} />
-          ),
-          headerRight: () => (
-            <Link href="/new" asChild>
-              <Pressable hitSlop={20} style={{ marginRight: 18 }}>
-                <Entypo name="plus" size={24} color={theme.colorGreen} />
-              </Pressable>
-            </Link>
           ),
         }}
       />
