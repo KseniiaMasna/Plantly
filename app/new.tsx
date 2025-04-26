@@ -47,7 +47,7 @@ export default function NewScreen() {
     <KeyboardAwareScrollView
       style={styles.container}
       contentContainerStyle={styles.contentContainer}
-      keyboardShouldPersistTaps="handled"
+      keyboardShouldPersistTaps="handled" //doesn't work
     >
       <View style={styles.centered}>
         <PlantlyImage />
