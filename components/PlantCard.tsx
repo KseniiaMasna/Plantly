@@ -6,7 +6,7 @@ import { Link } from "expo-router";
 
 export function PlantCard({ plant }: { plant: PlantType }) {
   return (
-    <Link href={`plants/${plant.id}`} asChild>
+    <Link href={`/plants/${plant.id}`} asChild>
       <Pressable style={styles.plantCard}>
         <PlantlyImage size={100} imageUri={plant.imageUri} />
         <View style={styles.details}>
