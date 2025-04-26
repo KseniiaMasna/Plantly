@@ -18,7 +18,7 @@ import { useRouter } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 
 export default function NewScreen() {
-  const [imageUri, setImageUri] = useState<string>();
+  const [imageUri, setImageUri] = useState<string>("");
   const [name, setName] = useState<string>();
   const [days, setDays] = useState<string>();
   const addPlant = usePlantStore((state) => state.addPlant);
@@ -43,7 +43,7 @@ export default function NewScreen() {
       );
     }
 
-    addPlant(name, Number(days));
+    addPlant(name, Number(days), imageUri);
     router.navigate("/");
   };
 
