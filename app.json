@@ -8,7 +8,7 @@
     "scheme": "plantly",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash-screen.png",
+      "image": "./assets/images/splash-screen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
