@@ -7,11 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "plantly",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash-screen.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
@@ -37,6 +32,18 @@
         "expo-font",
         {
           "fonts": ["node_modules/@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf"]
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#232323",
+          "image": "./assets/images/splash-icon.png",
+          "dark": {
+            "image": "./assets/images/splash-icon.png",
+            "backgroundColor": "#000000"
+          },
+          "imageWidth": 200
         }
       ]
     ]

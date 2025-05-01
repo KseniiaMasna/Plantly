@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, Platform } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { theme } from "@/theme";
 import { useUserStore } from "@/store/userStore";
@@ -14,7 +14,7 @@ export default function OnboardingScreen() {
 
   const handlePress = () => {
     toggleHasOnboarded();
-    router.replace("/(tabs)");
+    router.replace("/");
   };
 
   return (
@@ -54,5 +54,10 @@ const styles = StyleSheet.create({
   tagline: {
     fontSize: 18,
     textAlign: "center",
+    fontFamily: Platform.select({
+      android: "Caveat_400Regular",
+      ios: "Caveat_400Regular",
+      default: "Caveat_400Regular",
+    }),
   },
 });
