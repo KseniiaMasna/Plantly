@@ -31,7 +31,9 @@
       [
         "expo-font",
         {
-          "fonts": ["node_modules/@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf"]
+          "fonts": [
+            "node_modules/@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf"
+          ]
         }
       ],
       [
@@ -43,7 +45,18 @@
             "image": "./assets/images/splash-icon.png",
             "backgroundColor": "#000000"
           },
-          "imageWidth": 200
+          "resizeMode": "cover"
+        }
+      ],
+      [
+        "expo-quick-actions",
+        {
+          "androidIcons": {
+            "leaf": {
+              "foregroundImage": "./assets/images/leaf.png",
+              "backgroundColor": "#ffffff"
+            }
+          }
         }
       ]
     ]
