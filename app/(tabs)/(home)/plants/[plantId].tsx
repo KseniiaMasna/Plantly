@@ -21,6 +21,16 @@ export default function PlantDetails() {
   const navigation = useNavigation();
 
   useEffect(() => {
+    console.log("params action: ", params.action);
+    if (params.action === "water") {
+      console.log("trying to water a plant");
+      if (typeof plantId === "string") {
+        waterPlant(plantId);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     navigation.setOptions({
       title: plant?.name,
     });

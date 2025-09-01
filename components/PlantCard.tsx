@@ -16,6 +16,7 @@ export function PlantCard({ plant }: { plant: PlantType }) {
           <Text style={styles.subtitle}>
             Water every {plant.wateringFrequencyDays} days
           </Text>
+          <Link href={`/plants/${plant.id}?action=water`}>Water me</Link>
         </View>
       </Pressable>
     </Link>

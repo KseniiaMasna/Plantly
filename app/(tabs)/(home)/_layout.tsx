@@ -3,6 +3,9 @@ import { Entypo } from "@expo/vector-icons";
 import { Link, Stack } from "expo-router";
 import { Pressable } from "react-native";
 
+export const unstable_settings = {
+  initialRouteName: "index",
+};
 export const Layout = () => {
   return (
     <Stack>
